@@ -18,21 +18,18 @@
 
 /* Screen Sizes*/
 @mixin telefono() {
-  /*Creación del media query tomando en cuenta la variable del tamaño de la pantalla*/
   @media only screen and (min-width: #{$phone}) {
     @content;
   }
 }
 
 @mixin tablet() {
-  /*Creación del media query tomando en cuenta la variable del tamaño de la pantalla*/
   @media only screen and (min-width: #{$tablet}) {
     @content;
   }
 }
 
 @mixin desktop() {
-  /*Creación del media query tomando en cuenta la variable del tamaño de la pantalla*/
   @media only screen and (min-width: #{$desktop}) {
     @content;
   }
