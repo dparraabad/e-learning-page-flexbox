@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 100vw;
+  font-family: $principal_font;
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: $second_color;
+  }
+
+  @include tablet() {
+    max-width: 90vw;
+  }
+
+  @include desktop() {
+    max-width: 80vw;
+  }
+}

@@ -1,0 +1,54 @@
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .course {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+    border: 1px solid darken($gray, 10);
+
+    .img-course {
+      width: 100%;
+    }
+
+    @include tablet() {
+      flex: 0 1 calc(50% - 1rem);
+    }
+
+    @include desktop() {
+      flex: 0 1 calc(33% - 1rem);
+    }
+  }
+}
+
+.info-course {
+  padding: 1rem;
+
+  h4 {
+    height: 4rem;
+    margin: 0;
+    font-size: 1.7rem;
+  }
+
+  .price {
+    display: flex;
+    justify-content: space-between;
+
+    .regular {
+      text-decoration: line-through;
+      color: $third_color;
+      font-size: 1.5rem;
+    }
+
+    .offer {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: $second_color;
+    }
+  }
+}
+
+.button {
+  @include button($second_color);
+}

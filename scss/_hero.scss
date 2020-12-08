@@ -1,0 +1,77 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $second_color;
+
+  .text {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-weight: 700;
+  }
+
+  p {
+    padding-bottom: 2.5rem;
+    font-weight: 500;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  form {
+    width: 80%;
+    position: relative;
+    
+    input[type="text"] {
+      width: 100%;
+      height: 4rem;
+      padding-left: 1rem;
+      border: none;
+      border-radius: 1rem;
+      outline: none;
+      font-size: 1.5rem;
+    }
+
+    input[type="submit"] {
+      display: block;
+      width: 4rem;
+      height: 4rem;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-indent: -999px;
+      background-image: url('../img/lupa.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      background-color: $white;
+    }
+    
+    @include tablet() {
+      width: 60%;
+    }
+
+    @include desktop() {
+      width: 60%;
+    }
+  }
+
+  @include desktop() {
+    .text {
+      font-size: 2.5rem;
+    }
+  }
+}

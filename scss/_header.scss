@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__logo {
+    padding: 1.5rem 0;
+  }
+
+  @include tablet() {
+    justify-content: space-between;
+  }
+
+  @include desktop() {
+    justify-content: space-between;
+  }
+}
+
+.header__shopping--car {
+  position: relative;
+  z-index: 1;
+
+  img {
+    max-width: 120px;
+  }
+
+  .content {
+    display: none;
+  }
+
+  &:hover .content {
+    display: block;
+    max-width: 50rem;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    background-color: $gray;
+    
+    .list {
+      display: grid;
+      grid-template-columns: .2fr .7fr .1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 1.2rem;
+      
+      .title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      img {
+        width: 8rem;
+        height: 6rem;
+      }
+
+      .price {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: green;
+      }
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      @include button($principal_color);
+    }
+  }
+}

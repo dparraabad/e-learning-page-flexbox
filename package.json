@@ -1,0 +1,23 @@
+{
+  "name": "carrito",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulp.file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Diego Parra <dparraabad@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "6.1.0",
+    "gulp-cli": "2.2.0",
+    "gulp-sass": "4.0.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
