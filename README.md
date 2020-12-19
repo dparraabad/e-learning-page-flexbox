@@ -9,6 +9,7 @@ This is a project created with the aim of putting into practice our knowledge in
 - Media Queries: using different files that will load depending on the screen size.
 
 ## Methodologies
+- Mobile First
 - BEM (Block Element Modifier)
 
 ## Sample page
